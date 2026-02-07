@@ -1,0 +1,24 @@
+{
+  "name": "tab-intent-tracker",
+  "version": "1.0.0",
+  "description": "Chrome extension to track why you opened tabs and send smart reminders",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "zip": "zip -r tab-intent-tracker.zip . -x '*.git*' 'node_modules/*' '*.zip'",
+    "clean": "rm -f tab-intent-tracker.zip"
+  },
+  "keywords": [
+    "chrome-extension",
+    "productivity",
+    "tab-management",
+    "reminders",
+    "focus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "your-repo-url"
+  },
+  "devDependencies": {},
+  "manifest_version": 3
+}

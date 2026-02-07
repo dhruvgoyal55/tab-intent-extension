@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Intent Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <h1>📊 Tab Intent Tracker</h1>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number" id="todayTotal">-</div>
+        <div class="stat-label">Tabs Today</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stillOpen">-</div>
+        <div class="stat-label">Still Open</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="markedUseful">-</div>
+        <div class="stat-label">Completed</div>
+      </div>
+    </div>
+
+    <div class="tabs-by-intent">
+      <h3>Today's Tabs by Purpose</h3>
+      <div id="intentGroups">
+        <div class="intent-group">
+          <span class="group-emoji">📚</span>
+          <span class="group-label">Learning</span>
+          <span class="group-count" id="count-research">0</span>
+        </div>
+        <div class="intent-group">
+          <span class="group-emoji">💼</span>
+          <span class="group-label">Work</span>
+          <span class="group-count" id="count-work_task">0</span>
+        </div>
+        <div class="intent-group">
+          <span class="group-emoji">🛒</span>
+          <span class="group-label">Shopping</span>
+          <span class="group-count" id="count-shopping">0</span>
+        </div>
+        <div class="intent-group">
+          <span class="group-emoji">🧠</span>
+          <span class="group-label">Ideas</span>
+          <span class="group-count" id="count-read_later">0</span>
+        </div>
+        <div class="intent-group">
+          <span class="group-emoji">🎯</span>
+          <span class="group-label">Other</span>
+          <span class="group-count" id="count-random">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="recent-tabs">
+      <h3>Recent Tabs</h3>
+      <div id="recentTabsList">
+        <div class="empty-state">No tabs tracked yet</div>
+      </div>
+    </div>
+
+    <div class="popup-footer">
+      <button id="viewAllBtn" class="primary-btn">View All Tabs</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
